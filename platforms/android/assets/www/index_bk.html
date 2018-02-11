@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>Shaper</title>
+
+  <script src="cordova.js"></script>
+  <script src="./lib/onsenui/js/onsenui.js"></script>
+  <script src="./lib/angular/angular-1.5.8.min.js"></script>
+  <script src="./lib/onsenui/js/angular-onsenui.js"></script>
+  <script src="js/service/app.js"></script>
+  <script src="js/controller/controllers.js"></script>
+
+  <link rel="stylesheet" href="./lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="./lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body ng-app="myApp" ng-controller="VideosController">
+
+  <ons-page>
+
+    <ons-toolbar>
+      <div class="center">Shaper</div>
+    </ons-toolbar>
+    <ons-tabbar swipeable position="top" height="5">
+      <ons-tab label="morning" icon="ion-home"></ons-tab>
+      <ons-tab label="lunch" icon="md-settings"></ons-tab>
+      <ons-tab label="dinner" icon="md-settings"></ons-tab>
+    </ons-tabbar>
+
+    <ons-tabbar swipeable position="bottom" height="5">
+　　    <ons-button modifier="large--quiet" onclick="cameraOn()">
+        <ons-icon icon="camera"/>
+      </ons-button>
+    </ons-tabbar>
+
+    <ons-modal var="modal" ng-click="youtube.player.stopVideo(); modal.hide();">
+      <div id="player">
+        <div id="placeholder" style="width: 100%"></div>
+      </div>
+    </ons-modal>
+
+    <ons-modal animation="fade" animation-options="{ duration: 0.15 }" var="androidSearchModal" class="android-search-modal" ng-click="androidSearchModal.hide();">
+      <ons-page ons-show="focusInput('android')">
+        <ons-toolbar class="android-search-bar">
+          <div class="left">
+            <ons-toolbar-button>
+              <ons-icon style="color: #e52d27" icon="md-arrow-left"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+          <label class="center" ng-click="$event.stopPropagation()">
+            <form ng-submit="search(true); tabbar.setActiveTab(0); androidSearchModal.hide();">
+              <ons-input type="search" modifier="transparent" input-id="android-search-input" placeholder="Search for videos in YouTube" ng-model="query"></ons-input>
+            </form>
+          </label>
+        </ons-toolbar>
+        <div class="content"></div>
+        <div class="background" style="background-color: transparent"></div>
+      </ons-page>
+    </ons-modal>
+
+  </ons-page>
+</body>
+</html>

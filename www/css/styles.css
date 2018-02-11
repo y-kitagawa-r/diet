@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+html body{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  width:100%;
+  height:100%;
+
+  background-color: #f3f3f3;
+}
+
+/* header */
+header {
+	height: 30px;
+	width: 100%;
+	color: white;
+    position: fixed !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:100;
+    background: linear-gradient(90deg, #F83600, #F9D423);
+
+}
+.header-container{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	width:30%;
+	height: 80%;
+	margin: auto;
+}
+
+header p{
+  	margin: 0;
+	padding: 0;
+	cursor:pointer;
+  	text-align:center;
+  	font-size: 20px;
+  	font-weight: bold;
+
+}
+
+
+h1 {
+	margin-top: 0;
+  	color: #369;
+  	font-size: 250%;
+}
+
+
+/* sub-header */
+.sub-header{
+	width: 100%;
+	margin: 0 auto;
+    position: fixed !important;
+    position: absolute;
+   	font-weight: bold;
+    top: 30px;
+    left: 0;
+    z-index:99;
+	background-color:  #FAFAFA;
+    border-bottom:solid;
+    border-color:#DDDDDD;
+    border-width:thin;
+
+}
+
+.sub-header-contents{
+	width: 33.333%;
+	float: left;
+}
+.sub-header-img-area{
+	height: 20px;
+	width: 20px;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+.sub-header img{
+	width: 20px;
+	height: 20px;
+}
+
+
+.sub-header-text-area{
+	width: 50px;
+	height: 15px;
+	margin: 0 auto;
+}
+
+.sub-header-text{
+  	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 12px;
+	color: #666666;
+}
+
+/* content */
+.content-blank{
+	width: 100%;
+	height: 70px;
+}
+.content{
+    overflow: auto;
+    width:100%;
+    height:350px;
+}
+.content-day{
+    width:100%;
+	height:100px;
+  	margin: 0;
+	padding: 0;
+}
+.content-day-border{
+	height: 1px;
+    background: linear-gradient(90deg, #F83600, #F9D423);
+}
+
+.content-day-label {
+	height:20%;
+	background-color: #fdfdfd;
+}
+
+.content-day-label p{
+  	margin: 0;
+	padding-top: 2px;
+	padding-left: 20px;
+}
+
+
+.content-day-item{
+    width:33.33%;
+	height:80%;
+	background-color: #fdfdfd;
+  	margin: 0;
+	padding: 0;
+	float:left;
+    position: relative;
+
+}
+
+.day-item-image-area{
+	width:90%;
+	height:100%;
+	margin: 0 auto;
+}
+
+.day-item-image{
+	width:98%;
+	height:98%;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.content-day ul li{
+	display: inline-block;
+}
+
+/* sub-footer */
+.sub-footer{
+	height: 110px;
+	width: 100%;
+	background-color: white;
+	color: white;
+    position: fixed !important;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    z-index:100;
+    border-top:solid;
+    border-color: #DDDDDD;
+    border-width:thin;
+
+}
+
+.sub-footer-lavel-area{
+	height: 20px;
+	width: 100%;
+	border-bottom:solid;
+    border-color: #DDDDDD;
+    border-width:thin;
+}
+.sub-footer-img-area{
+	float:right;
+	margin-top: 1px;
+	margin-right: 10px;
+}
+.sub-footer-img-area img{
+	width: 18px;
+	height: 18px;
+}
+.sub-footer-photo-area{
+	overflow-y: hidden;
+	height: 100px;
+	width: 100%;
+}
+
+.sub-footer-photo-area ul{
+	white-space:nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin: 2px;
+	padding: 2px;
+	height: 100px;
+}
+.sub-footer-photo-area ul li{
+	display: inline-block;
+}
+
+.sub-footer-item{
+	margin: 0;
+	padding: 0;
+	width: 80px;
+	height: 80px;
+}
+.photo-image{
+	width: 80px;
+	height: 80px;
+}
+.shadow {
+    display: inline-block;
+    box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8); /*横方向　下方向　ぼかし　広がり　色 */
+}
+
+
+/* footer */
+footer{
+	height: 40px;
+	width: 100%;
+	background-color: #FAFAFA;
+	color: white;
+    position: fixed !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index:100;
+
+}
+.footer-border{
+	height: 2px;
+    background: linear-gradient(90deg, #F83600, #F9D423);
+}
+.footer-camera-button-area{
+	width: 50px;
+	margin: 0 auto;
+}
+
+.footer-img-area{
+	width: 25px;
+	margin: 0 auto;
+}
+.footer-img-area img{
+	width: 25px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+/* medium*/
+@media (min-width: 750px){
+	body {
+		 background-color: skyblue; /*ヘッダーの背景色*/
+	}
+}
+
+/* large*/
+@media (min-width: 960px){
+	body {
+		background-color: lime; /*ヘッダーの背景色*/
+	}
+}
