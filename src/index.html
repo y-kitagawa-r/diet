@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -20,6 +21,167 @@
   </head>
 
   <body>
-    <my-app>Loading AppComponent content here ...</my-app>
+    <header>
+      <div class="header-container">
+        <p id="app-name">shaper</p>
+      </div>
+    </header>
+    <div class="sub-header">
+      <div class="sub-header-contents" id="sub-header-morning">
+        <div class="sub-header-img-area">
+          <img class="sub-header-img" src="./img/morning-icon.svg" alt="morning-icon" />
+        </div>
+        <div class="sub-header-text-area">
+            <p class="sub-header-text">morning</p>
+        </div>
+      </div>
+      <div class="sub-header-contents" id="sub-header-lunch">
+        <div class="sub-header-img-area">
+          <img class="sub-header-img" src="./img/lunch-icon.svg" alt="lunch-icon" />
+        </div>
+        <div class="sub-header-text-area">
+            <p class="sub-header-text">lunch</p>
+        </div>
+      </div>
+      <div class="sub-header-contents" id="sub-header-dinner">
+        <div class="sub-header-img-area">
+          <img class="sub-header-img" src="./img/dinner-icon.svg" alt="dinner-icon" />
+        </div>
+        <div class="sub-header-text-area">
+            <p class="sub-header-text">dinner</p>
+        </div>
+     </div>
+    </div>
+    <div class="content-blank">
+    </div>
+
+    <div class="content">
+      <div class="content-day">
+        <div class="content-day-label">
+          <p>1/1</p>
+        </div>
+        <div class="content-day-border"></div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+      </div>
+      <div class="content-day">
+        <div class="content-day-label">
+          <p>1/1</p>
+        </div>
+        <div class="content-day-border"></div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+      </div>
+      <div class="content-day">
+        <div class="content-day-label">
+          <p>1/1</p>
+        </div>
+        <div class="content-day-border"></div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+      </div>
+      <div class="content-day">
+        <div class="content-day-label">
+          <p>1/1</p>
+        </div>
+        <div class="content-day-border"></div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+        <div class="content-day-item">
+          <div class="day-item-image-area">
+            <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sub-footer">
+      <div class="sub-footer-lavel-area" ng-click="onclick()">
+        <div class="sub-footer-img-area">
+          <img class="sub-footer-img" src="./img/arrow-icon.svg" alt="arrow-icon" />
+        </div>
+      </div>
+      <div class="sub-footer-photo-area">
+        <ul>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+       <div class="footer-container">
+       <div class="footer-border"></div>
+         <div class="footer-camera-button-area">
+          <div class="footer-img-area">
+            <img class="footer-img" src="./img/camera-icon.svg" alt="camera-icon" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>
