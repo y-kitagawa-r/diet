@@ -2,24 +2,227 @@
 <html>
   <head>
     <title>Angular QuickStart</title>
-    <base href="/">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="./lib/onsenui/js/onsenui.js"></script>
+    <script src="./lib/angular/angular-1.5.8.min.js"></script>
+    <script src="./lib/onsenui/js/angular-onsenui.js"></script>
+    <script src="js/service/app.js"></script>
+    <script src="js/controller/controllers.js"></script>
 
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('main.js').catch(function(err){ console.error(err); });
-    </script>
+    <link rel="stylesheet" href="./lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="./lib/onsenui/css/onsen-css-components.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./img/fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.min.js">
   </head>
 
   <body>
-    <my-app>Loading AppComponent content here ...</my-app>
+  <ons-page>
+    <header>
+      <div class="header-container">
+        <p id="app-name">shaper</p>
+      </div>
+      <i class="fas fa-camera-retro"></i>
+    </header>
+
+    <div class="content">
+      <div class="content-day content-day-shadow">
+        <div class="content-day-label">
+          <p>1/1</p>
+        </div>
+        <div class="content-day-border"></div>
+        <div class="content-day-items">
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-day content-day-shadow">
+        <div class="content-day-label">
+          <p>1/1</p>
+        </div>
+        <div class="content-day-border"></div>
+        <div class="content-day-items">
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content-day content-day-shadow">
+        <div class="content-day-label">
+          <p>1/1</p>
+        </div>
+        <div class="content-day-border"></div>
+        <div class="content-day-items">
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content-day content-day-shadow">
+        <div class="content-day-label">
+          <p>1/1</p>
+        </div>
+        <div class="content-day-border"></div>
+        <div class="content-day-items">
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+          <div class="content-day-item">
+            <div class="day-item-image-area">
+              <img class="day-item-image" src="./img/sample-image.jpg" alt="sample-image" />
+            </div>
+            <div class="day-item-button-area"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="sub-footer">
+      <div class="sub-footer-lavel-area" ng-click="onclick()">
+        <div class="sub-footer-img-area">
+          <img class="sub-footer-img" src="./img/arrow-icon.svg" alt="arrow-icon" />
+        </div>
+      </div>
+      <div class="sub-footer-photo-area">
+        <ul>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+          <li class="sub-footer-item">
+            <img class="photo-image shadow" src="./img/sample-image.jpg" alt="sample-image" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+       <div class="footer-container">
+       <div class="footer-border"></div>
+         <div class="footer-camera-button-area">
+          <div class="footer-img-area">
+            <img class="footer-img" src="./img/camera-icon.svg" alt="camera-icon" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </ons-page>
   </body>
 </html>

@@ -97,7 +97,7 @@ ons-bottom-toolbar {
 }
 
 .page[status-bar-fill] > .page__content {
-  top: 20px;
+/*  top: 20px;*/
 }
 
 .page[status-bar-fill] > .navigation-bar {
